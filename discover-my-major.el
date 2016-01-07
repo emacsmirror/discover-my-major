@@ -201,7 +201,7 @@ If ARG is non-nil recreate the makey popup function even if it is already define
   (let ((active-modes))
     (mapc (lambda (mode) (condition-case nil
                         (if (and (symbolp mode) (symbol-value mode))
-                            (add-to-list 'active-modes (format "%s" mode)))
+                            (add-to-list 'active-modes (prin1-to-string mode)))
                       (error nil) ))
           minor-mode-list)
     active-modes))
