@@ -175,7 +175,7 @@ If ARG is non-nil recreate the makey popup function even if it is already define
   (interactive
    (let* ((active-modes (dmm/list-active-modes)))
      (list
-      (completing-read "Discover mode: " active-modes 'symbolp t nil 'dmm/discover-my-mode-history nil))))
+      (completing-read "Discover mode: " active-modes (lambda (_) t) t nil 'dmm/discover-my-mode-history nil))))
   (let* ((mode-name (if (symbolp mode)
                         (symbol-name mode)
                       mode))
@@ -201,7 +201,7 @@ If ARG is non-nil recreate the makey popup function even if it is already define
   (let ((active-modes))
     (mapc (lambda (mode) (condition-case nil
                         (if (and (symbolp mode) (symbol-value mode))
-                            (add-to-list 'active-modes mode))
+                            (add-to-list 'active-modes (prin1-to-string mode)))
                       (error nil) ))
           minor-mode-list)
     active-modes))
