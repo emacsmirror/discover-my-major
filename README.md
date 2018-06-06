@@ -17,7 +17,7 @@ The output is pretty bare bones and not optimized but it seems to work already q
 `quelpa` is at https://github.com/quelpa/quelpa
 
 ```lisp
-(quelpa '(discover-my-major :fetcher github :repo "steckerhalter/discover-my-major"))
+(quelpa '(discover-my-major :fetcher git :url "https://framagit.org/steckerhalter/discover-my-major.git"))
 ```
 
 ### MELPA
