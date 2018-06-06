@@ -6,9 +6,9 @@ The command is inspired by [discover.el](https://github.com/mickeynp/discover.el
 
 The output is pretty bare bones and not optimized but it seems to work already quite well for most modes:
 
-![package-menu-mode screenshot](https://raw.github.com/steckerhalter/discover-my-major/master/package-menu-mode.png)
+![package-menu-mode screenshot](https://framagit.org/steckerhalter/discover-my-major/raw/master/package-menu-mode.png)
 
-![git-commit-mode screenshot](https://raw.github.com/steckerhalter/discover-my-major/master/git-commit-mode.png)
+![git-commit-mode screenshot](https://framagit.org/steckerhalter/discover-my-major/raw/master/git-commit-mode.png)
 
 ## Installation
 
@@ -29,7 +29,7 @@ Packages are available in [MELPA](http://melpa.milkbox.net/).
 ```lisp
 (:name discover-my-major
        :type git
-       :url "https://github.com/steckerhalter/discover-my-major")
+       :url "https://framagit.org/steckerhalter/discover-my-major")
 ```
 
 ## Usage
